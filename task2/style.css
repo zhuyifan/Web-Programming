@@ -1,0 +1,123 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  font-size: 20px;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: 'artifika';
+  src: url('fonts/artifika/Artifika-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'acme';
+  src: url('fonts/acme/Acme-Regular.ttf');
+}
+
+p {
+  font-family: 'artifika';
+}
+
+h1, h2 {
+  font-family: 'acme';
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+section > h2 + p{
+  text-indent: 20px;
+}
+
+a:link {
+  color: Teal;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #a66;
+}
+
+a:focus {
+  color: DarkOrange;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: RebeccaPurple;
+  text-decoration: none;
+}
+
+section > p > a {
+  padding-right: 10px;
+  background: url('external-link-52.png') no-repeat right center;
+  background-size: 10px;
+}
+
+nav > ul > li{
+  padding: 30px;
+  margin-left: -50px;
+  margin-top: 10px;
+  outline-style: solid;
+  outline-color: #a66;
+  outline-width: 1px;
+  text-align: center;
+  list-style-type: none;
+}
+
+nav > ul > li > a:link{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: square;
+}
